@@ -32,13 +32,11 @@ def text(message):
             bot.reply_to(message, '@dannie_SahaGlens')
         if message.text.lower() == 'ж':
             j_1 = ['ж', 'опа']
-            j_2 = choice(j_1)
             time.sleep(1)
-            bot.reply_to(message, j_2)
-        if message.text.lower() == 'рандом':
-            i = randint(0, 99999999)
+            bot.reply_to(message, choice(j_1))
+        if message.text.lower() == 'рандом':            
             time.sleep(1)
-            bot.reply_to(message, f'рандомное число: {i}')
+            bot.reply_to(message, f'рандомное число: ' + str(randint(0, 99999999)))
         if message.text.lower() == 'хелп':
             time.sleep(1)
             bot.reply_to(message, 'https://telegra.ph/Pravila-06-05-9')
@@ -50,9 +48,8 @@ def text(message):
             bot.reply_to(message, 'за углом поссыш')
         if message.text.lower() == 'ты гей':
             j_1 = ['нахуй иди', 'сам']
-            j_2 = choice(j_1)
             time.sleep(1)
-            bot.reply_to(message, j_2)
+            bot.reply_to(message, choice(j_1))
         if message.text.lower() == 'бот лох':
             time.sleep(1)
             bot.reply_to(message, 'иди нахуй')
